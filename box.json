@@ -1,5 +1,5 @@
 {
-    "alias": "twig-lint.phar",
+    "alias": "twig-linter.phar",
     "chmod": "0755",
     "directories": ["src"],
     "files": ["LICENSE"],
@@ -11,7 +11,7 @@
         }
     ],
     "git-version": "package_version",
-    "main": "bin/twig-lint",
-    "output": "twig-lint.phar",
+    "main": "bin/twig-linter",
+    "output": "twig-linter.phar",
     "stub": true
 }
