@@ -5,20 +5,20 @@ twig-lint is a lint tool for your twig files.
 
 It can be useful to integrate in your ci setup or as the basis of editor plugins (e.g. [syntastic](https://github.com/scrooloose/syntastic) for Vim).
 
-[![Build Status](https://secure.travis-ci.org/asm89/twig-lint.png?branch=master)](http://travis-ci.org/asm89/twig-lint)
+[![Build Status](https://secure.travis-ci.org/xvilo/twig-lint.png?branch=master)](http://travis-ci.org/xvilo/twig-lint)
 
 Installation / Usage
 --------------------
 
 ### As standalone executable
 
-Download the [`twig-lint.phar`](https://asm89.github.io/d/twig-lint.phar) executable. Or as a global composer dependency:
+Download the [`twig-linter.phar`](https://asm89.github.io/d/twig-linter.phar) executable. Or as a global composer dependency:
 
 ```bash
-composer global require "asm89/twig-lint" "@stable"
+composer global require "xvilo/twig-lint" "@stable"
 ```
 
-Run `php twig-lint.phar lint <file>` or `~/.composer/vendor/bin/twig-lint lint <file>`.
+Run `php twig-linter.phar lint <file>` or `~/.composer/vendor/bin/twig-linter lint <file>`.
 
 ### As a dev dependency
 
@@ -27,12 +27,12 @@ Add the following to your `composer.json`:
 ```json
 {
     "require-dev": {
-        "asm89/twig-lint": "*"
+        "xvilo/twig-lint": "*"
     }
 }
 ```
 
-Run `./bin/twig-lint lint <file>`.
+Run `./bin/twig-linter lint <file>`.
 
 ### Vim and Syntastic configuration
 
@@ -40,7 +40,7 @@ For the standalone executable, add the following to your `~/.vimrc` file:
 
 ```
 let g:syntastic_twig_twiglint_exec = 'php'
-let g:syntastic_twig_twiglint_exe = 'php /path/to/twig-lint.phar'
+let g:syntastic_twig_twiglint_exe = 'php /path/to/twig-linter.phar'
 ```
 
 For the composer dependency, twig-lint must be in your `$PATH`, no further
